@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #111;
+  line-height: 1.4;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 0 1rem;
+}
+
+header {
+  color: #fff;
+  background-color: #212529;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+header .container .logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+header .container .btn-toggle {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 0;
+}
+header .navigation {
+  flex-basis: 100%;
+  margin-top: 1rem;
+  display: none;
+}
+header .navigation.active {
+  display: block;
+}
+
+header .nav-items {
+  list-style: none;
+}
+.nav-items .nav-link {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 0;
+  display: block;
+  border-radius: 5px;
+
+  transition: all 0.5s ease;
+}
+.nav-items .nav-link:hover {
+  background-color: #0673bc;
+  padding-left: 0.5rem;
+}
+/* hero*/
+.hero {
+  height: 90vh;
+  background: url('https://cdn.pixabay.com/photo/2020/09/29/16/36/macarons-5613353_640.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.hero-overlay {
+  color: #fff;
+  background: #00000070;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero-content {
+  text-align: center;
+  text-wrap: balance;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.hero-content p {
+  margin-bottom: 2rem;
+}
+.btn-primary {
+  color: #fff;
+  text-decoration: none;
+  background-color: #0673bc;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  color: #0673bc;
+  background-color: #fff;
+}
+/* services */
+section:not(.hero) {
+  padding: 6rem 0;
+}
+section > .section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+section > .section-subtitle {
+  text-align: center;
+  color: gray;
+  margin-bottom: 3rem;
+}
+.service-card {
+  background-color: #f8f9fa;
+  text-align: center;
+  border-radius: 5px;
+  padding: 1rem;
+  transition: box-shadow 0.5s ease;
+}
+.service-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.service-card .service-title {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.services > .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.projects {
+  background-color: #f8f9fa;
+}
+.projects > .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+.project-card {
+  background-color: #fff;
+  max-width: 400px;
+}
+.project-card .project-link {
+  display: block;
+  position: relative;
+  height: 300px;
+}
+.project-card .project-overlay {
+  font-weight: bold;
+  color: #fff;
+  background-color: #0673bc;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+.project-card .project-overlay span {
+  border: solid 3px #fff;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.project-card .project-link img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project-card .project-link:hover .project-overlay {
+  opacity: 1;
+}
+.project-card .project-details {
+  text-align: center;
+  padding: 1rem;
+}
+.project-card .project-details h3 {
+  margin-bottom: 0.5rem;
+}
+/* team */
+.team > .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+.team-member {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+.team-member img {
+  max-width: 200px;
+  border: 5px solid #bbb;
+  border-radius: 5%;
+}
+.team-member p {
+  color: gray;
+}
+.team-member .member-socials {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+.team-member .member-socials a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #0673bc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: all 0.5s ease;
+}
+.team-member .member-socials a:hover {
+  color: #0673bc;
+  background-color: #fff;
+}
+.team > .section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.team > .section-subtitle {
+  text-align: center;
+  color: gray;
+  margin-bottom: 3rem;
+}
+/* contact */
+
+.contact {
+  background-color: #f8f9fa;
+}
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.contact-form .form-message {
+  grid-column: 1 / span 2;
+}
+.contact-form input,
+.contact-form textarea {
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  font-family: inherit;
+}
+.contact-form .btn-primary {
+  grid-column: 1 / span 2;
+}
+/* footer */
+footer {
+  color: #fff;
+  background-color: #212529;
+  padding: 1.25rem 0;
+}
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* media */
+@media screen and (min-width: 768px) {
+  .btn-primary {
+    font-size: 1rem;
+    padding: 1rem 3rem;
+  }
+  header .btn-toggle {
+    display: none;
+  }
+  header .navigation {
+    display: flex;
+    flex-basis: auto;
+    margin: 0;
+  }
+  header .nav-items {
+    display: flex;
+    gap: 1rem;
+  }
+  .nav-items .nav-link {
+    padding: 0.5rem;
+  }
+  .hero-content {
+    max-width: 700px;
+  }
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+  .hero-content p {
+    font-size: 1.125rem;
+  }
+  .contact-form .btn-primary {
+    width: auto;
+    justify-self: center;
+  }
+}
