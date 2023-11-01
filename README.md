@@ -17,7 +17,7 @@ our website has something for everyone.
 ## Technologies Used
 HTML, CSS, JavaScript
 Font Awesome for icons
-SMTP.js for sending emails
+Formspree for sending emails
 
 Contributing
 We welcome contributions from the community. If you'd like to contribute to the development of this website, please follow our contributing guidelines.
