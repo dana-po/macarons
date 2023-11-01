@@ -19,7 +19,6 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-
   padding: 0 1rem;
 }
 
@@ -87,7 +86,7 @@ header .nav-items {
 }
 .hero-overlay {
   color: #fff;
-  background: #00000070;
+  background: #605f5f70;
   position: absolute;
   inset: 0;
   display: flex;
@@ -109,7 +108,7 @@ header .nav-items {
 .btn-primary {
   color: #fff;
   text-decoration: none;
-  background-color: #0673bc;
+  background-color: #9a2a87;
   display: inline-block;
   padding: 1rem 2rem;
   border-radius: 5px;
@@ -118,8 +117,8 @@ header .nav-items {
   cursor: pointer;
 }
 .btn-primary:hover {
-  color: #0673bc;
-  background-color: #fff;
+  color: #fff;
+  background-color: #36a78e;
 }
 /* services */
 section:not(.hero) {
@@ -177,7 +176,7 @@ section > .section-subtitle {
 .project-card .project-overlay {
   font-weight: bold;
   color: #fff;
-  background-color: #0673bc;
+  background-color: #9a2a87;
   position: absolute;
   inset: 0;
   display: flex;

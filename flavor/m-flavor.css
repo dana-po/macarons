@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #111;
+  line-height: 1.4;
+  /* background-image: url("./macaron-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+h2{
+    text-align: center;
+    margin: 20px;
+}
+h3{
+    margin: 10px;
+}
+.flavor{
+    margin-left: 35px;
+    margin-right: 35px;
+    align-items: center;
+}
+span{
+    color: rgb(29, 190, 29);
+    font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+    .container{
+        /* background-color: rgb(139, 89, 187); */
+        /* color: beige; */
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    h2{
+        color: rgb(29, 190, 29);
+    }
+}
